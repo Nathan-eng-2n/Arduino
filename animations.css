@@ -1,0 +1,189 @@
+/* Estilos adicionais para melhorar a animação e interatividade */
+
+/* Animações para os olhos do robô */
+@keyframes blink {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(0.8); }
+}
+
+@keyframes glow {
+    0%, 100% { box-shadow: 0 0 10px var(--primary); }
+    50% { box-shadow: 0 0 20px var(--primary), 0 0 30px var(--primary-light); }
+}
+
+.robot-eyes .eye {
+    animation: glow 3s infinite;
+}
+
+.robot-eyes .eye:first-child {
+    animation: glow 3s infinite, blink 5s infinite 1s;
+}
+
+.robot-eyes .eye:last-child {
+    animation: glow 3s infinite, blink 5s infinite 1.5s;
+}
+
+/* Melhorias para o menu mobile */
+.menu-toggle span {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle span.active:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-toggle span.active:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle span.active:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+/* Melhorias para links e botões */
+.nav-links a:hover, 
+.footer-links a:hover,
+.feature-link:hover,
+.social-icon:hover,
+.btn:hover {
+    transform: translateY(-3px);
+    transition: transform 0.3s ease;
+}
+
+/* Efeitos de hover para cards */
+.feature-card:hover,
+.project-card:hover,
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Melhorias para formulários */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    transform: translateY(-2px);
+}
+
+/* Melhorias para a página de tecnologias */
+.tech-list li {
+    transition: transform 0.3s ease, border-left 0.3s ease;
+}
+
+.tech-list li:hover {
+    transform: translateX(5px);
+    border-left-width: 5px;
+}
+
+/* Melhorias para a página de projetos */
+.project-tags span {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-tags span:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* Melhorias para a página de contato */
+.faq-item {
+    transition: transform 0.3s ease;
+}
+
+.faq-item:hover {
+    transform: translateY(-3px);
+}
+
+/* Melhorias para a página sobre */
+.timeline-dot {
+    transition: transform 0.3s ease;
+}
+
+.timeline li:hover .timeline-dot {
+    transform: scale(1.2);
+}
+
+/* Melhorias para acessibilidade */
+:focus {
+    outline: 3px solid rgba(14, 165, 233, 0.5);
+    outline-offset: 2px;
+}
+
+.btn:focus, 
+.nav-links a:focus,
+.social-icon:focus {
+    outline: 3px solid rgba(14, 165, 233, 0.5);
+    outline-offset: 2px;
+}
+
+/* Melhorias para carregamento da página */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-content,
+.features-grid,
+.projects-grid,
+.about-grid,
+.contact-grid,
+.tech-item,
+.faq-container {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Melhorias para tema escuro */
+.dark-mode .robot-eyes .eye {
+    animation: glow 3s infinite;
+    box-shadow: 0 0 15px var(--primary), 0 0 25px var(--primary-light);
+}
+
+/* Melhorias para dispositivos touch */
+@media (hover: none) {
+    .nav-links a:active, 
+    .footer-links a:active,
+    .feature-link:active,
+    .social-icon:active,
+    .btn:active {
+        transform: translateY(-3px);
+    }
+    
+    .feature-card:active,
+    .project-card:active,
+    .about-card:active {
+        transform: translateY(-5px);
+    }
+}
+
+/* Melhorias para impressão */
+@media print {
+    .navbar,
+    .footer,
+    .contact-cta,
+    .hero-buttons,
+    .btn {
+        display: none !important;
+    }
+    
+    body {
+        color: black !important;
+        background: white !important;
+    }
+    
+    .container {
+        width: 100% !important;
+        max-width: none !important;
+        padding: 0 !important;
+    }
+    
+    .about-content h2,
+    .tech-content h2,
+    .section-header h2 {
+        color: black !important;
+    }
+    
+    .highlight {
+        color: black !important;
+        font-weight: bold !important;
+    }
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Nathan Figueiredo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="robot-eyes">
+                        <div class="eye"></div>
+                        <div class="eye"></div>
+                    </div>
+                    <span>Nathan Figueiredo</span>
+                </a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="projetos.html">Projetos</a></li>
+                    <li><a href="tecnologias.html">Tecnologias</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </div>
+            <div class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Entre em <span class="highlight">Contato</span></h1>
+            <p>Vamos conversar sobre como posso ajudar em seu próximo projeto de robótica e eletrônica</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Informações de <span class="highlight">Contato</span></h2>
+                    <p>Estou disponível para projetos de consultoria, desenvolvimento de soluções robóticas personalizadas e parcerias em pesquisa e inovação.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>contato@nathanfigueiredo.com.br</p>
+                                <p>projetos@nathanfigueiredo.com.br</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Telefone</h3>
+                                <p>(11) 98765-4321</p>
+                                <p>(11) 3456-7890</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Localização</h3>
+                                <p>São Paulo, SP - Brasil</p>
+                                <p>Disponível para projetos remotos</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Horário de Atendimento</h3>
+                                <p>Segunda a Sexta: 9h às 18h</p>
+                                <p>Sábado: 9h às 12h</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-connect">
+                        <h3>Conecte-se</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Envie uma <span class="highlight">Mensagem</span></h2>
+                    <p>Preencha o formulário abaixo para iniciar uma conversa sobre seu projeto ou tirar dúvidas sobre meus serviços.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Seu email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Seu telefone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Selecione um assunto</option>
+                                <option value="projeto">Novo Projeto</option>
+                                <option value="consultoria">Consultoria</option>
+                                <option value="parceria">Proposta de Parceria</option>
+                                <option value="duvida">Dúvidas</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Descreva seu projeto ou mensagem" required></textarea>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">Concordo com a <a href="#">Política de Privacidade</a> e o processamento dos meus dados.</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group full-width">
+                            <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                        </div>
+                    </form>
+                    
+                    <div id="formSuccess" class="form-success">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Mensagem Enviada!</h3>
+                        <p>Obrigado pelo contato. Retornarei em breve.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perguntas <span class="highlight">Frequentes</span></h2>
+                <p>Respostas para algumas das perguntas mais comuns sobre meus serviços</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quais tipos de projetos de robótica você desenvolve?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Desenvolvo uma ampla gama de projetos robóticos, incluindo robôs assistentes, sistemas de automação industrial, veículos autônomos, drones, braços robóticos e sistemas de monitoramento ambiental. Cada projeto é personalizado de acordo com as necessidades específicas do cliente.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Como funciona o processo de desenvolvimento de um projeto?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O processo começa com uma consulta inicial para entender suas necessidades. Em seguida, desenvolvo um conceito e apresento uma proposta detalhada. Após a aprovação, prossigo com o design, prototipagem, testes e implementação final. Todo o processo é colaborativo, com atualizações regulares e oportunidades para feedback.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Qual é o prazo médio para desenvolvimento de um projeto?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>O prazo varia significativamente dependendo da complexidade do projeto. Projetos simples podem levar de 1 a 3 meses, enquanto projetos mais complexos podem levar de 6 meses a 1 ano. Durante a consulta inicial, fornecerei uma estimativa de tempo mais precisa para seu projeto específico.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Você oferece suporte técnico após a conclusão do projeto?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim, ofereço suporte técnico contínuo para todos os projetos. Isso inclui manutenção, atualizações de software, resolução de problemas e treinamento para sua equipe. Pacotes de suporte personalizados estão disponíveis para atender às suas necessidades específicas.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Você trabalha com projetos internacionais ou apenas no Brasil?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Trabalho com clientes em todo o mundo. Graças às ferramentas de comunicação modernas e metodologias de trabalho remoto, posso colaborar efetivamente com equipes internacionais. Para projetos que exigem presença física, podemos discutir arranjos de viagem conforme necessário.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <div class="robot-eyes small">
+                            <div class="eye"></div>
+                            <div class="eye"></div>
+                        </div>
+                        <span>Nathan Figueiredo</span>
+                    </div>
+                    <p>Desenvolvendo o futuro da robótica e eletrônica com soluções inovadoras e tecnologia de ponta.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="projetos.html">Projetos</a></li>
+                        <li><a href="tecnologias.html">Tecnologias</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Tecnologias</h3>
+                    <ul>
+                        <li><a href="tecnologias.html">Microcontroladores</a></li>
+                        <li><a href="tecnologias.html">Sistemas de Energia</a></li>
+                        <li><a href="tecnologias.html">Sensores Avançados</a></li>
+                        <li><a href="tecnologias.html">Inteligência Artificial</a></li>
+                        <li><a href="tecnologias.html">Impressão 3D</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> contato@nathanfigueiredo.com.br</li>
+                        <li><i class="fas fa-phone"></i> (11) 98765-4321</li>
+                        <li><i class="fas fa-map-marker-alt"></i> São Paulo, Brasil</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Nathan Figueiredo. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Contact form functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            const formSuccess = document.getElementById('formSuccess');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Simulate form submission
+                    contactForm.style.display = 'none';
+                    formSuccess.style.display = 'flex';
+                    
+                    // Reset form
+                    setTimeout(() => {
+                        contactForm.reset();
+                        contactForm.style.display = 'grid';
+                        formSuccess.style.display = 'none';
+                    }, 5000);
+                });
+            }
+            
+            // FAQ toggle functionality
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                    
+                    const toggle = item.querySelector('.faq-toggle i');
+                    toggle.classList.toggle('fa-plus');
+                    toggle.classList.toggle('fa-minus');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
